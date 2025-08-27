@@ -10,6 +10,9 @@ const brigadasRoutes = require('./routes/brigada.Routes');
 
 const app = express();
 const port = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 
 // Middlewares globales
 app.use(cors({
